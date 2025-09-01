@@ -9,6 +9,8 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .coming-soon-text {
@@ -17,6 +19,10 @@
   font-family: 'Poppins', sans-serif;
   width: 100%;
   overflow: hidden;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .coming-soon-text h1 {
@@ -63,17 +69,94 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1400px) {
+  .coming-soon-text h1 {
+    font-size: 11rem;
+    letter-spacing: 1.8rem;
+  }
+}
+
 @media (max-width: 1200px) {
   .coming-soon-text h1 {
-    font-size: 10rem;
-    letter-spacing: 1.5rem;
+    font-size: 9rem;
+    letter-spacing: 1.4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .coming-soon-text h1 {
+    font-size: 8rem;
+    letter-spacing: 1.2rem;
+    margin-left: -1.5rem;
   }
 }
 
 @media (max-width: 768px) {
+  .coming-soon-container {
+    padding: 0.5rem;
+  }
+  
   .coming-soon-text h1 {
-    font-size: 6rem;
-    letter-spacing: 1rem;
+    font-size: 5.5rem;
+    letter-spacing: 0.8rem;
     margin-left: -1rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
+@media (max-width: 576px) {
+  .coming-soon-container {
+    padding: 0.25rem;
+  }
+  
+  .coming-soon-text h1 {
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    margin-left: -0.5rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
+@media (max-width: 480px) {
+  .coming-soon-container {
+    padding: 0.1rem;
+  }
+  
+  .coming-soon-text h1 {
+    font-size: 3.2rem;
+    letter-spacing: 0.3rem;
+    margin-left: 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
+@media (max-width: 360px) {
+  .coming-soon-container {
+    padding: 0.05rem;
+  }
+  
+  .coming-soon-text h1 {
+    font-size: 2.8rem;
+    letter-spacing: 0.2rem;
+    margin-left: 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
+@media (max-width: 320px) {
+  .coming-soon-container {
+    padding: 0.02rem;
+  }
+  
+  .coming-soon-text h1 {
+    font-size: 2.4rem;
+    letter-spacing: 0.15rem;
+    margin-left: 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 }
